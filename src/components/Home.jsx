@@ -124,6 +124,7 @@ import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import Photo from '../assets/Me.jpeg';
 // import { useHistory } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const Home = () => {
   return (
@@ -131,13 +132,13 @@ const Home = () => {
       {/* Container */}
       <div className='max-w-[1000px] mx-auto px-4 sm:px-8 flex flex-col sm:flex-row justify-center items-center h-full'>
         {/* Photo */}
-        <div className="sm:w-1/2 relative mb-4 sm:mb-0">
-          <img src={Photo} alt="Rajdeep Bastakoti" className="w-full rounded-full" />
+        <div className="sm:w-1/8 relative mb-4 sm:mb-0">
+          <img src={Photo} alt="Rajdeep Bastakoti" className="w-full sm:max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl rounded-full" />
           <div className="absolute inset-0 bg-gradient-to-tl from-[#0a192f] via-transparent to-[#0a192f]"></div>
         </div>
         
         {/* Text */}
-        <div className="sm:w-1/2 text-center sm:text-left sm:pl-8">
+        <div className="sm:w-7/8 text-center sm:text-left sm:pl-8">
           <p className='text-pink-600 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl'>
             Hi, my name is
           </p>
@@ -145,18 +146,20 @@ const Home = () => {
             Rajdeep Bastakoti
           </h1>
           <h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-[#8892b0]'>
-            I'm a Full Stack Developer.
+            I am a Frontend Developer.
           </h2>
           <p className='text-[#8892b0] py-4 max-w-[700px] text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl'>
-            I’m a full-stack developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building responsive full-stack web applications.
+          I am a frontend developer with some experience in backend as well as an eye for excellent interface design. I am focused on learning and improving my skills. Explore my profile!
           </p>
           <div>
+          <Link to='work' smooth={true} duration={500}>
             <button className='text-white group border-2 px-4 sm:px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl'>
-              View Work
+                My Work
               <span className='group-hover:rotate-90 duration-300'>
                 <HiArrowNarrowRight className='ml-2 sm:ml-3 ' />
               </span>
             </button>
+            </Link>
           </div>
         </div>
       </div>
