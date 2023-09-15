@@ -2,6 +2,7 @@ import projectPL from '../assets/projects/project_pl.png'
 import projectTODO from '../assets/projects/project_todo.png'
 import projectUCL from '../assets/projects/project_ucl.jpg'
 import projectPF from '../assets/projects/project_portfolio.png'
+import projectSU from '../assets/projects/project_signup.png'
 
 export const data=[
     {
@@ -27,11 +28,17 @@ export const data=[
     },
     {
         id:4,
-        name:"React JS Application for my portfolio",
+        name:"React JS Application for my portfolio using React/Tailwind",
         image:projectPF,
-        github:"",
+        github:"https://github.com/RBCodewalker/portfolio",
         live:"",
     },
-
+    {
+        id:5,
+        name:"A Simple User Registration Feature using Angular6/NodeJS/MongoDB",
+        image:projectSU,
+        github:"https://github.com/RBCodewalker/Signup",
+        live:"https://rbcodewalker.github.io/Signup/",
+    },
 
 ]

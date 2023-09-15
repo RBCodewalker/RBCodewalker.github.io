@@ -139,7 +139,7 @@ const Home = () => {
         
         {/* Text */}
         <div className="sm:w-7/8 text-center sm:text-left sm:pl-8">
-          <p className='text-pink-600 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl'>
+          <p className='text-red-600 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl'>
             Hi, my name is
           </p>
           <h1 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-[#ccd6f6]'>
@@ -153,7 +153,7 @@ const Home = () => {
           </p>
           <div>
           <Link to='work' smooth={true} duration={500}>
-            <button className='text-white group border-2 px-4 sm:px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl'>
+            <button className='text-white group border-2 px-4 sm:px-6 py-3 my-2 flex items-center hover:bg-red-600 hover:border-red-600 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl'>
                 My Work
               <span className='group-hover:rotate-90 duration-300'>
                 <HiArrowNarrowRight className='ml-2 sm:ml-3 ' />
