@@ -31,11 +31,11 @@ export const data=[
         name:"React JS Application for my portfolio using React/Tailwind",
         image:projectPF,
         github:"https://github.com/RBCodewalker/portfolio",
-        live:"",
+        live:"https://rajdeepbastakoti.com/",
     },
     {
         id:5,
-        name:"A Simple User Registration Feature using Angular6/NodeJS/MongoDB",
+        name:"A Simple Registration Feature using Angular6/NodeJS",
         image:projectSU,
         github:"https://github.com/RBCodewalker/Signup",
         live:"https://rbcodewalker.github.io/Signup/",
