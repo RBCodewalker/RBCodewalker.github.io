@@ -96,10 +96,51 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
+        <li className='py-6 text-4xl'>
+          {' '}
+          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+          <a
+              href='https://www.linkedin.com/in/rajdeep-bastakoti-816a7121b/'
+          >
+              <FaLinkedin size={50} />
+          </a>  
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          {' '}
+          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+          <a
+              href='https://github.com/RBCodewalker'
+          >
+              <FaGithub size={50} />
+          </a>
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          {' '}
+          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+          <a
+              href='mailto:bastakotirajdeep60@gmail.com'
+          >
+              <HiOutlineMail size={50} />
+          </a>
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          {' '}
+          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+          <a
+              href={resume}
+          >
+              <BsFillPersonLinesFill size={50} />
+          </a>
+
+          </Link>
+        </li>
       </ul>
 
       {/* Social icons */}
-      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+      <div className='hidden md:flex fixed flex-col top-[35%] left-0'>
         <ul>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
             <a
