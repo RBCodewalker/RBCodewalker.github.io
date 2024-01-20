@@ -67,72 +67,72 @@ const Navbar = () => {
             : 'fixed top-0 right:0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
         }
       >
-        <li className='py-6 text-4xl'>
+        <li className='py-3 text-xl'>
           <Link onClick={handleClick} to='home' smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          {' '}
+        <li className='py-3 text-xl'>
+          {/* {' '} */}
           <Link onClick={handleClick} to='about' smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          {' '}
+        <li className='py-3 text-xl'>
+          {/* {' '} */}
           <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          {' '}
+        <li className='py-3 text-xl'>
+          {/* {' '} */}
           <Link onClick={handleClick} to='work' smooth={true} duration={500}>
             Work
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          {' '}
+        <li className='py-3 text-xl'>
+          {/* {' '} */}
           <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
             Contact
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          {' '}
+        <li className='py-3 text-xl'>
+          {/* {' '} */}
           <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
           <a
               href='https://www.linkedin.com/in/rajdeep-bastakoti-816a7121b/'
           >
-              <FaLinkedin size={50} />
+              <FaLinkedin size={30} />
           </a>  
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          {' '}
+        <li className='py-3 text-xl'>
+          {/* {' '} */}
           <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
           <a
               href='https://github.com/RBCodewalker'
           >
-              <FaGithub size={50} />
+              <FaGithub size={30} />
           </a>
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          {' '}
+        <li className='py-3 text-xl'>
+          {/* {' '} */}
           <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
           <a
               href='mailto:bastakotirajdeep60@gmail.com'
           >
-              <HiOutlineMail size={50} />
+              <HiOutlineMail size={30} />
           </a>
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          {' '}
+        <li className='py-3 text-xl'>
+          {/* {' '} */}
           <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
           <a
               href={resume}
           >
-              <BsFillPersonLinesFill size={50} />
+              <BsFillPersonLinesFill size={30} />
           </a>
 
           </Link>
