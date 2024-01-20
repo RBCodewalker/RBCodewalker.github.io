@@ -1,4 +1,4 @@
-import projectPL from '../assets/projects/project_pl.png'
+import projectDH from '../assets/projects/project_dh.png'
 import projectTODO from '../assets/projects/project_todo.png'
 import projectUCL from '../assets/projects/project_ucl.jpg'
 import projectPF from '../assets/projects/project_portfolio.png'
@@ -7,10 +7,10 @@ import projectSU from '../assets/projects/project_signup.png'
 export const data=[
     {
         id:1,
-        name:"A general info fullstack web-app using PHP/MySQL",
-        image:projectUCL,
-        github:"https://github.com/RBCodewalker/UCL",
-        live:"https://rbcodewalker.github.io/UCL/ ",
+        name:"Implemented REST API, Infinite Scrolling in NextJS(TypeScript)",
+        image:projectDH,
+        github:"https://github.com/RBCodewalker/doctors-hub",
+        live:"https://doctors-hub.vercel.app/",
     },
     {
         id:2,
@@ -21,10 +21,10 @@ export const data=[
     },
     {
         id:3,
-        name:"Simple Profit-Loss Calculator using HTML5/CSS3/JS",
-        image:projectPL,
-        github:"https://github.com/RBCodewalker/P-L",
-        live:"https://rbcodewalker.github.io/P-L/ ",
+        name:"A general info fullstack web-app using PHP/MySQL",
+        image:projectUCL,
+        github:"https://github.com/RBCodewalker/UCL",
+        live:"https://rbcodewalker.github.io/UCL/ ",
     },
     {
         id:4,
