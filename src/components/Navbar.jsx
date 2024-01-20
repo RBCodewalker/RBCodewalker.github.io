@@ -98,44 +98,35 @@ const Navbar = () => {
         </li>
         <li className='py-3 text-xl'>
           {/* {' '} */}
-          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
           <a
               href='https://www.linkedin.com/in/rajdeep-bastakoti-816a7121b/'
           >
               <FaLinkedin size={30} />
           </a>  
-          </Link>
         </li>
         <li className='py-3 text-xl'>
           {/* {' '} */}
-          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
           <a
               href='https://github.com/RBCodewalker'
           >
               <FaGithub size={30} />
           </a>
-          </Link>
         </li>
         <li className='py-3 text-xl'>
           {/* {' '} */}
-          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
           <a
               href='mailto:bastakotirajdeep60@gmail.com'
           >
               <HiOutlineMail size={30} />
           </a>
-          </Link>
         </li>
         <li className='py-3 text-xl'>
           {/* {' '} */}
-          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
           <a
               href={resume}
           >
               <BsFillPersonLinesFill size={30} />
           </a>
-
-          </Link>
         </li>
       </ul>
 
