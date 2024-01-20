@@ -18,42 +18,44 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed h-[100px] flex items-center bg-[#0a192f] text-gray-300'>
+    <div className='fixed h-[100px] flex items-center bg-[#0a192f] text-gray-300 z-10'>
       {/* <div>
         <img src={Photo} alt='My Photo' style={{ width: '100px' }} />
       </div> */}
 
       {/* menu */}
-      <ul className='fixed top-0 left-1/2 transform -translate-x-1/2 w-screen px-4 h-20 bg-[#0a192f] text-gray-300 flex items-center justify-center md:hidden"'>
-        <li className='text-2xl transition duration-300 transform hover:scale-110'>
-          <Link to='home' smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className='text-2xl transition duration-300 transform hover:scale-110'>
-          <Link to='about' smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li className='text-2xl transition duration-300 transform hover:scale-110'>
-          <Link to='skills' smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li className='text-2xl transition duration-300 transform hover:scale-110'>
-          <Link to='work' smooth={true} duration={500}>
-            Work
-          </Link>
-        </li>
-        <li className='text-2xl transition duration-300 transform hover:scale-110'>
-          <Link to='contact' smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
-      </ul>
+      {/* <div className=''> */}
+        <ul className='fixed top-0 left-1/2 z-20 transform -translate-x-1/2 w-screen px-4 h-20 bg-[#0a192f] text-gray-300 flex items-center justify-center hidden md:inline-flex'>
+          <li className='text-2xl transition duration-300 transform hover:scale-110'>
+            <Link to='home' smooth={true} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li className='text-2xl transition duration-300 transform hover:scale-110'>
+            <Link to='about' smooth={true} duration={500}>
+              About
+            </Link>
+          </li>
+          <li className='text-2xl transition duration-300 transform hover:scale-110'>
+            <Link to='skills' smooth={true} duration={500}>
+              Skills
+            </Link>
+          </li>
+          <li className='text-2xl transition duration-300 transform hover:scale-110'>
+            <Link to='work' smooth={true} duration={500}>
+              Work
+            </Link>
+          </li>
+          <li className='text-2xl transition duration-300 transform hover:scale-110'>
+            <Link to='contact' smooth={true} duration={500}>
+              Contact
+            </Link>
+          </li>
+        </ul>
+      {/* </div> */}
 
       {/* Hamburger */}
-      <div onClick={handleClick} className='md:hidden z-10'>
+      <div onClick={handleClick} className='fixed right-0 md:hidden pr-10 text-3xl z-100'>
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -62,7 +64,7 @@ const Navbar = () => {
         className={
           !nav
             ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
+            : 'fixed top-0 right:0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
         }
       >
         <li className='py-6 text-4xl'>

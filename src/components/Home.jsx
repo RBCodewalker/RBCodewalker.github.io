@@ -123,16 +123,15 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import Photo from '../assets/Me.jpeg';
-// import { useHistory } from 'react-router-dom';
 import { Link } from 'react-scroll';
 
 const Home = () => {
   return (
-    <div name='home' className='w-full h-screen bg-[#0a192f]'>
+    <div name='home' className='w-full h-screen bg-[#0a192f] z-10'>
       {/* Container */}
       <div className='max-w-[1000px] mx-auto px-4 sm:px-8 flex flex-col sm:flex-row justify-center items-center h-full'>
         {/* Photo */}
-        <div className="sm:w-1/8 relative mb-4 sm:mb-0">
+        <div className="sm:w-1/8 relative mb-4 sm:mb-0 z-1">
           <img src={Photo} alt="Rajdeep Bastakoti" className="w-full sm:max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl rounded-full" />
           <div className="absolute inset-0 bg-gradient-to-tl from-[#0a192f] via-transparent to-[#0a192f]"></div>
         </div>
