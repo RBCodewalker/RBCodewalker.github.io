@@ -1,10 +1,10 @@
-import projectDH from '../assets/projects/project_dh.png'
-import projectTODO from '../assets/projects/project_todo.png'
-import projectUCL from '../assets/projects/project_ucl.jpg'
-import projectPF from '../assets/projects/project_portfolio.png'
-import projectSU from '../assets/projects/project_signup.png'
+// import projectDH from '../assets/projects/project_dh.png'
+// import projectTODO from '../assets/projects/project_todo.png'
+// import projectUCL from '../assets/projects/project_ucl.jpg'
+// import projectPF from '../assets/projects/project_portfolio.png'
+// import projectSU from '../assets/projects/project_signup.png'
 
-export const data=[
+// export const data=[
     // {
     //     id:1,
     //     name:"Implemented REST API, Infinite Scrolling in NextJS(TypeScript)",
@@ -41,4 +41,4 @@ export const data=[
     //     live:"https://rbcodewalker.github.io/Signup/",
     // },
 
-]
+// ]
