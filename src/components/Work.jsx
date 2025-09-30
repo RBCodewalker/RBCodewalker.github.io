@@ -1,53 +1,62 @@
 import React from 'react';
-// import { data } from "../data/data.js";
+import { data } from "../data/data.js";
 
 
 const Work = () => {
 
     // projects file
-    // const project = data;
-    //setProject(data);
-  
+    const project = data;
+
   return (
-    <div name='work' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
-      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+    <div name='work' className='w-full min-h-screen text-gray-300 bg-[#0a192f] py-20'>
+      <div className='max-w-[1000px] mx-auto px-6 sm:px-8 flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
           <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-red-600'>
-            Work
+            Projects
           </p>
-          <p className='py-6'>Check out some of the highlights from my work</p>
+          <p className='py-6 text-lg'>Check out some of my personal projects</p>
         </div>
 
 {/* container for projects */}
-{/* <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          
-          {project.map((item, index) => (
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+          {project.map((item) => (
   <div
-    key={index}
-    style={{ backgroundImage: `url(${item.image})` }}
-    className="shadow-lg shadow-[#040c16] group container rounded-md 
-              flex justify-center text-center items-center mx-auto content-div "
+    key={item.id}
+    className="relative group rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden bg-[#112240]"
   >
-    <div className="opacity-0 group-hover:opacity-100 ">
-      <span className="text-2xl font bold text-white tracking-wider ">
-        {item.name}
-      </span>
-      <div className="pt-8 text-center ">
-        <a href={item.github} target="_blank">
-          <button
-            className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-          >
-            Code
-          </button>
+    {/* Background Image */}
+    <div
+      style={{ backgroundImage: `url(${item.image})` }}
+      className="w-full h-48 bg-contain bg-center bg-no-repeat transition-transform duration-300 group-hover:scale-110"
+    />
+
+    {/* Card footer - always visible */}
+    <div className="p-3 bg-[#112240]">
+      <h3 className="text-base font-bold text-gray-200 mb-1">{item.name}</h3>
+      <p className="text-gray-400 text-xs leading-relaxed">{item.description}</p>
+    </div>
+
+    {/* Buttons overlay - slide up on hover */}
+    <div className="absolute inset-0 bg-gradient-to-t from-[#0a192f] via-[#0a192f]/95 to-[#0a192f]/80 translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col justify-center items-center gap-4 p-6">
+      <h3 className="text-2xl font-bold text-white text-center mb-2">{item.name}</h3>
+      <p className="text-gray-300 text-center text-sm leading-relaxed mb-4">{item.description}</p>
+      <div className="flex gap-4 w-full max-w-xs">
+        <a
+          href={item.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1 text-center py-3 px-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded transition-all duration-200 hover:scale-105"
+        >
+          Code
         </a>
-        <a href={item.live} target="_blank">
-          <button
-            className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-          >
-            Live
-          </button>
+        <a
+          href={item.live}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1 text-center py-3 px-4 bg-gray-700 hover:bg-gray-600 text-white font-semibold rounded transition-all duration-200 hover:scale-105"
+        >
+          Live
         </a>
       </div>
     </div>
@@ -55,7 +64,7 @@ const Work = () => {
 ))}
 
 
-</div> */}
+</div>
       </div>
     </div>
   );

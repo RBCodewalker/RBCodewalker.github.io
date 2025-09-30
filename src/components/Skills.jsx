@@ -13,64 +13,40 @@ import Bootstrap from '../assets/bootstrap.png';
 import Figma from '../assets/figma.png';
 
 const Skills = () => {
+  const skills = [
+    { icon: HTML, name: 'HTML' },
+    { icon: CSS, name: 'CSS' },
+    { icon: JavaScript, name: 'JavaScript' },
+    { icon: ReactImg, name: 'React' },
+    { icon: GitHub, name: 'GitHub' },
+    { icon: Flask, name: 'Flask' },
+    { icon: Node, name: 'Node.js' },
+    { icon: Angular, name: 'Angular' },
+    { icon: Tailwind, name: 'Tailwind' },
+    { icon: Bootstrap, name: 'Bootstrap' },
+    { icon: TypeScript, name: 'TypeScript' },
+    { icon: Figma, name: 'Figma' },
+  ];
+
   return (
-    <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
+    <div name='skills' className='w-full min-h-screen bg-[#0a192f] text-gray-300 py-20'>
       {/* Container */}
-      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-          <div>
-              <p className='text-4xl font-bold inline border-b-4 border-red-600 '>Skills</p>
-              <p className='py-4'>These are the technologies I have worked with</p>
+      <div className='max-w-[1000px] mx-auto px-6 sm:px-8 flex flex-col justify-center w-full h-full'>
+          <div className='pb-8'>
+              <p className='text-4xl font-bold inline border-b-4 border-red-600'>Skills</p>
+              <p className='py-4 text-lg'>These are the technologies I have worked with</p>
           </div>
 
-          <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-10 mx-auto' src={HTML} alt="HTML icon" />
-                  <p className='my-2'>HTML</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-1000'>
-                  <img className='w-10 mx-auto' src={CSS} alt="HTML icon" />
-                  <p className='my-2'>CSS</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-10 mx-auto' src={JavaScript} alt="HTML icon" />
-                  <p className='my-2'>JAVASCRIPT</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-10 mx-auto' src={ReactImg} alt="HTML icon" />
-                  <p className='my-2'>REACT</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-10 mx-auto' src={GitHub} alt="HTML icon" />
-                  <p className='my-2'>GITHUB</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-10 mx-auto' src={Flask} alt="HTML icon" />
-                  <p className='my-2'>FLASK</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-10 mx-auto' src={Node} alt="HTML icon" />
-                  <p className='my-2'>NODE JS</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-10 mx-auto' src={Angular} alt="HTML icon" />
-                  <p className='my-2'>ANGULAR</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-10 mx-auto' src={Tailwind} alt="HTML icon" />
-                  <p className='my-2'>TAILWIND</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-10 mx-auto' src={Bootstrap} alt="HTML icon" />
-                  <p className='my-2'>BOOTSTRAP</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-10 mx-auto' src={TypeScript} alt="HTML icon" />
-                  <p className='my-2'>TYPESCRIPT</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-10 mx-auto' src={Figma} alt="HTML icon" />
-                  <p className='my-2'>FIGMA</p>
-              </div>
+          <div className='w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center'>
+              {skills.map((skill, index) => (
+                <div
+                  key={index}
+                  className='shadow-lg shadow-[#040c16] hover:shadow-red-600/50 hover:scale-110 transition-all duration-300 rounded-lg p-6 bg-[#112240]'
+                >
+                  <img className='w-16 h-16 mx-auto object-contain' src={skill.icon} alt={`${skill.name} icon`} />
+                  <p className='mt-4 font-semibold text-sm'>{skill.name}</p>
+                </div>
+              ))}
           </div>
       </div>
     </div>
