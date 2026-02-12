@@ -1,12 +1,67 @@
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}",],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        fira: ['"Fira Code"', 'monospace'],
+      },
+      colors: {
+        'theme-backdrop': 'var(--theme-backdrop)',
+        'theme-bg': 'var(--theme-background)',
+        'theme-stroke': 'var(--theme-stroke)',
+        'theme-fg': 'var(--theme-foreground)',
+        'heading': 'var(--heading-foreground)',
+        'primary': 'var(--primary)',
+        'primary-inv': 'var(--primary-inverted)',
+        'link': 'var(--link-foreground)',
+        'ide-indigo': 'var(--indigo-500)',
+        'ide-indigo-300': 'var(--indigo-300)',
+        'ide-teal': {
+          300: 'var(--teal-300)',
+          400: 'var(--teal-400)',
+          500: 'var(--teal-500)',
+          900: 'var(--teal-900)',
+          950: 'var(--teal-950)',
+        },
+        'ide-slate': {
+          50: 'var(--slate-50)',
+          500: 'var(--slate-500)',
+          600: 'var(--slate-600)',
+          800: 'var(--slate-800)',
+          950: 'var(--slate-950)',
+        },
+      },
+      fontSize: {
+        'body-sm': ['14px', { lineHeight: '19.6px' }],
+        'body-md': ['16px', { lineHeight: '24px' }],
+        'body-lg': ['18px', { lineHeight: '27px' }],
+        'heading-h4': ['30px', { lineHeight: '42px' }],
+        'heading-h1': ['60px', { lineHeight: '66px' }],
+      },
+      spacing: {
+        '0': '0px',
+        '1': '2px',
+        '2': '4px',
+        '3': '8px',
+        '4': '12px',
+        '5': '16px',
+        '6': '24px',
+        '7': '32px',
+        '8': '40px',
+        '9': '48px',
+        '10': '64px',
+      },
+      borderRadius: {
+        'ide-sm': '2px',
+        'ide': '4px',
+        'ide-md': '8px',
+        'ide-lg': '16px',
+      },
       zIndex: {
-        '1':1,
+        '1': 1,
         '100': 100,
-       }
+      },
     },
   },
   plugins: [],
-}
+};
