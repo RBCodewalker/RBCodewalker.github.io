@@ -1,25 +1,23 @@
 import React from 'react';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import Skills from "./components/Skills";
-import Work from "./components/Work";
-import WorkExperience from "./components/WorkExperience";
-// import Image from "./components/Image";
-
+import About from './components/About';
+import Contact from './components/Contact';
+import Education from './components/Education';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Skills from './components/Skills';
+import Work from './components/Work';
+import WorkExperience from './components/WorkExperience';
 
 function App() {
   return (
-    <div>
+    <div className='bg-[#0a192f]'>
       <Navbar />
-      {/* <Image /> */}
       <Home />
       <About />
       <Skills />
-      <Work />
       <WorkExperience />
+      <Education />
+      <Work />
       <Contact />
     </div>
   );

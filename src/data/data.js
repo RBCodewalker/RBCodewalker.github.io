@@ -27,5 +27,40 @@ export const data=[
         github:"https://github.com/RBCodewalker/portfolio",
         live:"https://rajdeepbastakoti.com/",
     },
+    {
+        id:4,
+        name:"U.S. Election Coverage",
+        description:"US Election coverage live map using D3, with high-traffic interactive state-level reporting.",
+        imageName:"us.png",
+        live:"https://www.bild.de/ig/699ff606-1d74-4d9f-80f9-95d4105767a2/index/index.html#/client/2024/state",
+    },
+    {
+        id:5,
+        name:"Bundestagswahl Coverage - Map",
+        description:"Interactive live map  for Bundestagswahl coverage, with all 299 state candidate face-offs.",
+        imageName:"btw-m.png",
+        live:"https://www.bild.de/ig/2161471a-046b-486a-a4e7-9aded82ff89a/index/index.html#/m/live",
+    },
+    {
+        id:6,
+        name:"Bundestagswahl Coverage - Bar Chart",
+        description:"Live bar-chart coverage module for Bundestagswahl results.",
+        imageName:"btw-b.png",
+        live:"https://www.bild.de/ig/2161471a-046b-486a-a4e7-9aded82ff89a/index/index.html#/b/live",
+    },
+    {
+        id:7,
+        name:"Bundestagswahl Coverage - Seat Chart",
+        description:"Bundestag-style seat projection chart for live Bundestag formation updates and gamification for custom coalition.",
+        imageName:"btw-p.png",
+        live:"https://www.bild.de/ig/2161471a-046b-486a-a4e7-9aded82ff89a/index/index.html#/p/k/live",
+    },
+    {
+        id:8,
+        name:"Daily Horoscope",
+        description:"Daily horoscope user-facing experience shipped at Axel Springer / BILD.",
+        imageName:"horo.png",
+        live:"https://www.bild.de/ig/3a07efb1-176f-4a2d-8aaa-7e5310a0826f/index/index.html",
+    },
 
 ]

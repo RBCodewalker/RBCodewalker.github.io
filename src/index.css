@@ -5,69 +5,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
 @layer base {
-    html {
-        background-color: #0a192f;
-        overscroll-behavior: none;
-    }
-    body {
-        @apply font-[Montserrat];
-        background-color: #0a192f;
-        overscroll-behavior: none;
-    }
-    li {
-        @apply px-4;
-        @apply cursor-pointer
-    }
+  html {
+    background-color: #0a192f;
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-[Montserrat];
+    background-color: #0a192f;
+    overscroll-behavior: none;
+    color: #cbd5e1;
+  }
+
+  li {
+    @apply px-4 cursor-pointer;
+  }
 }
 
-.content-div {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 250px;
+.checkpoint-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.8rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(15, 23, 42, 0.45);
+  color: #e2e8f0;
+  font-weight: 600;
+  font-size: 0.82rem;
+  line-height: 1;
+  transition: all 180ms ease;
 }
 
-.content-div:hover {
-    background-image: linear-gradient(
-        to right,
-        rgba(112, 157, 255, 0.8),
-        hsla(242, 74%, 61%, 0.8)
-    )!important;
+.checkpoint-link:hover {
+  border-color: rgba(248, 113, 113, 0.75);
+  background: rgba(248, 113, 113, 0.14);
+}
+
+.checkpoint-link:focus-visible {
+  outline: 2px solid #f87171;
+  outline-offset: 2px;
+}
+
+.checkpoint-link-active {
+  border-color: rgba(239, 68, 68, 0.95);
+  background: rgba(239, 68, 68, 0.2);
+  color: #ffffff;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateY(0);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(12px);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(12px);
+    opacity: 0;
+  }
 }
 
 .animate-scroll {
-    animation: scroll 2s ease-in-out infinite;
+  animation: scroll 2s ease-in-out infinite;
 }
 
 @keyframes finger-swipe {
-    0% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    50% {
-        transform: translateY(-10px);
-        opacity: 0.6;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 0.65;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .animate-finger-swipe {
-    animation: finger-swipe 2s ease-in-out infinite;
+  animation: finger-swipe 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
