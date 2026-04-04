@@ -76,7 +76,7 @@ const Work = () => {
                 </div>
 
                 {/* Buttons overlay - slide up on hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0a192f] via-[#0a192f]/95 to-[#0a192f]/80 translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col justify-center items-center gap-4 p-6">
+                <div className="absolute inset-0 bg-[#0a192f] translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col justify-center items-center gap-4 p-6">
                   <h3 className="text-2xl font-bold text-white text-center mb-2">{item.name}</h3>
                   <p className="text-gray-300 text-center text-sm leading-relaxed mb-4">{item.description}</p>
                   <div className="flex gap-4 w-full max-w-xs">

@@ -84,8 +84,8 @@ const Home = () => {
         <div className='space-y-6'>
           <p className='text-red-400 tracking-wide text-sm uppercase'>Hello, my name is</p>
           <h1 className='text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight'>{profile.name}</h1>
-          <h2 className='text-xl sm:text-2xl text-slate-300 font-semibold'>{profile.title}</h2>
-          <p className='text-lg sm:text-xl text-slate-200 font-semibold'>
+          {/* <h2 className='text-xl sm:text-2xl text-slate-300 font-semibold'>{profile.title}</h2> */}
+          <p className='text-xl sm:text-2xl text-slate-300 font-semibold'>
             I am a <span ref={typewriterRef} className='text-red-400'></span>
             <span className='text-red-400 animate-pulse'>|</span>
           </p>
@@ -128,7 +128,7 @@ const Home = () => {
         </Link>
       </div>
 
-      <div className='md:hidden absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center'>
+      <div className='md:hidden absolute bottom-48 right-5 -translate-y-1/2 flex flex-col items-center'>
         <Link to='about' smooth='easeOutCubic' duration={220} offset={-118} className='cursor-pointer flex flex-col items-center'>
           <svg width='50' height='60' viewBox='0 0 50 60' className='animate-finger-swipe'>
             <ellipse cx='25' cy='45' rx='8' ry='10' fill='#9ca3af' opacity='0.8' />

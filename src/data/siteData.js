@@ -10,7 +10,7 @@ export const checkpoints = [
 
 export const profile = {
   name: 'Rajdeep Bastakoti',
-  title: 'Software Developer | Computer Science Graduate | Tech Enthusiast',
+  title: '',
   location: 'Berlin, Germany',
   summary:
     'Interested in all things tech with expertise in software development and a focus on building innovative, well-shipped products. I practice proactive development and enjoy exploring new domains.',
