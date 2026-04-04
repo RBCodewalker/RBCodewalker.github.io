@@ -1,5 +1,76 @@
 import React from 'react';
+import {
+  FaBolt,
+  FaCodeBranch,
+  FaDatabase,
+  FaFilm,
+  FaLayerGroup,
+  FaMapMarkedAlt,
+  FaMobileAlt,
+  FaPaintBrush,
+  FaReact,
+  FaRocket,
+  FaTools,
+  FaVideo,
+  FaWaveSquare,
+} from 'react-icons/fa';
+import htmlIcon from '../assets/html.png';
+import cssIcon from '../assets/css.png';
+import javascriptIcon from '../assets/javascript.png';
+import typescriptIcon from '../assets/ts.png';
+import reactIcon from '../assets/react.png';
+import angularIcon from '../assets/angular.png';
+import nodeIcon from '../assets/node.png';
+import flaskIcon from '../assets/flask.png';
+import mongoIcon from '../assets/mongo.png';
+import awsIcon from '../assets/aws.png';
+import githubIcon from '../assets/github.png';
+import figmaIcon from '../assets/figma.png';
+import firebaseIcon from '../assets/firebase.png';
 import { skillsByCategory } from '../data/siteData';
+
+const assetIconMap = {
+  HTML: htmlIcon,
+  CSS: cssIcon,
+  JavaScript: javascriptIcon,
+  TypeScript: typescriptIcon,
+  React: reactIcon,
+  Angular: angularIcon,
+  'Node.js': nodeIcon,
+  Flask: flaskIcon,
+  MongoDB: mongoIcon,
+  AWS: awsIcon,
+  Git: githubIcon,
+  Figma: figmaIcon,
+  Firebase: firebaseIcon,
+};
+
+const logoFallbackMap = {
+  'React Native': FaMobileAlt,
+  'React Query': FaReact,
+  Zustand: FaLayerGroup,
+  GSAP: FaWaveSquare,
+  MUI: FaPaintBrush,
+  D3: FaBolt,
+  Fastify: FaRocket,
+  SQL: FaDatabase,
+  'CI/CD': FaCodeBranch,
+  Leaflet: FaMapMarkedAlt,
+  FFMPEG: FaVideo,
+  Nexrender: FaFilm,
+  Expo: FaRocket,
+  'Google Analytics': FaBolt,
+};
+
+const renderSkillIcon = (skill) => {
+  const assetIcon = assetIconMap[skill];
+  if (assetIcon) {
+    return <img src={assetIcon} alt={`${skill} logo`} className='w-4 h-4 object-contain' />;
+  }
+
+  const IconComponent = logoFallbackMap[skill] || FaTools;
+  return <IconComponent aria-hidden='true' className='w-4 h-4 text-slate-200' />;
+};
 
 const Skills = () => {
   return (
@@ -19,12 +90,13 @@ const Skills = () => {
               <h3 className='text-xl font-bold text-white mb-5'>{group.category}</h3>
               <div className='flex flex-wrap gap-2'>
                 {group.items.map((skill) => (
-                  <span
+                  <div
                     key={skill}
-                    className='px-3 py-1.5 rounded-full text-sm font-medium bg-[#0b1b36] border border-slate-600 text-slate-200'
+                    className='inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-medium bg-[#0b1b36] border border-slate-600 text-slate-200'
                   >
+                    {renderSkillIcon(skill)}
                     {skill}
-                  </span>
+                  </div>
                 ))}
               </div>
             </article>

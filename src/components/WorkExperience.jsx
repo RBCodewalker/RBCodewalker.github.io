@@ -8,7 +8,7 @@ const WorkExperience = () => {
       <div className='max-w-[1100px] mx-auto'>
         <div className='pb-8'>
           <p className='text-3xl sm:text-4xl font-bold inline border-b-4 text-gray-300 border-red-600'>Work Experience</p>
-          <p className='py-4 text-lg text-slate-300'>Professional experience with role progression and measurable impact.</p>
+          <p className='py-4 text-lg text-slate-300'>My Professional experience over the years.</p>
         </div>
 
         <div className='space-y-8'>

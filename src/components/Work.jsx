@@ -68,6 +68,11 @@ const Work = () => {
                 <div className="p-3 bg-[#112240]">
                   <h3 className="text-base font-bold text-gray-200 mb-1">{item.name}</h3>
                   <p className="text-gray-400 text-xs leading-relaxed">{item.description}</p>
+                  <div className="mt-3">
+                    <span className="inline-flex items-center rounded-full border border-slate-500 bg-[#0b1b36] px-2.5 py-1 text-[11px] font-semibold text-slate-200">
+                      {item.projectOrigin || 'Personal'}
+                    </span>
+                  </div>
                 </div>
 
                 {/* Buttons overlay - slide up on hover */}

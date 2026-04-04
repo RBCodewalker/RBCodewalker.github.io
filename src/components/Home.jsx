@@ -93,9 +93,9 @@ const Home = () => {
 
           <div className='flex flex-wrap items-center gap-4'>
             <Link
-              to='about'
-              smooth={true}
-              duration={450}
+              to='experience'
+              smooth='easeOutCubic'
+              duration={260}
               offset={-96}
               className='group inline-flex h-12 min-w-[170px] items-center justify-center gap-2 rounded-full border border-slate-300/50 bg-slate-900/45 px-5 text-slate-100 font-semibold transition-all duration-300 hover:cursor-pointer hover:border-red-400 hover:bg-red-500/15'
             >
@@ -104,8 +104,8 @@ const Home = () => {
             </Link>
             <Link
               to='contact'
-              smooth={true}
-              duration={450}
+              smooth='easeOutCubic'
+              duration={260}
               offset={-96}
               className='inline-flex h-12 min-w-[170px] items-center justify-center rounded-full border border-slate-300/50 bg-slate-900/45 px-5 text-slate-100 font-semibold transition-all duration-300 hover:cursor-pointer hover:border-red-400 hover:bg-red-500/15'
             >
@@ -120,7 +120,7 @@ const Home = () => {
       </div>
 
       <div className='hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center'>
-        <Link to='about' smooth={true} duration={450} offset={-96} className='cursor-pointer'>
+        <Link to='about' smooth='easeOutCubic' duration={260} offset={-96} className='cursor-pointer'>
           <div className='w-8 h-12 border-2 border-slate-400 rounded-full flex justify-center p-2'>
             <div className='w-1 h-3 bg-red-500 rounded-full animate-scroll'></div>
           </div>
@@ -129,7 +129,7 @@ const Home = () => {
       </div>
 
       <div className='md:hidden absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center'>
-        <Link to='about' smooth={true} duration={450} offset={-118} className='cursor-pointer flex flex-col items-center'>
+        <Link to='about' smooth='easeOutCubic' duration={220} offset={-118} className='cursor-pointer flex flex-col items-center'>
           <svg width='50' height='60' viewBox='0 0 50 60' className='animate-finger-swipe'>
             <ellipse cx='25' cy='45' rx='8' ry='10' fill='#9ca3af' opacity='0.8' />
             <rect x='21' y='35' width='8' height='15' rx='3' fill='#9ca3af' opacity='0.8' />

@@ -17,8 +17,9 @@ const Navbar = () => {
                   <Link
                     to={checkpoint.sectionName}
                     spy={true}
-                    smooth={true}
-                    duration={450}
+                    spyThrottle={0}
+                    smooth='linear'
+                    duration={120}
                     offset={-96}
                     activeClass='checkpoint-link-active'
                     className='checkpoint-link'
@@ -60,8 +61,9 @@ const Navbar = () => {
                   <Link
                     to={checkpoint.sectionName}
                     spy={true}
-                    smooth={true}
-                    duration={450}
+                    spyThrottle={0}
+                    smooth='linear'
+                    duration={120}
                     offset={-118}
                     activeClass='checkpoint-link-active'
                     className='checkpoint-link text-xs'

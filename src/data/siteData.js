@@ -15,10 +15,11 @@ export const profile = {
   summary:
     'Interested in all things tech with expertise in software development and a focus on building innovative, well-shipped products. I practice proactive development and enjoy exploring new domains.',
   aboutIntro:
-    'I enjoy turning product ideas into practical, high-quality interfaces while keeping performance and accessibility in focus.',
+    'As a Software Engineer right in the middle of massive technological shift and digital uncertainty, I enjoy turning product ideas into practical, high-quality interfaces while keeping performance and accessibility in focus. I specialize in UX polishing and simplify solutions to improve user engagement.',
   aboutDetails: [
-    'At Axel Springer / BILD, I have been involved in digital transformation projects, building tools that streamline editorial workflows and support high-traffic event coverage.',
-    'Outside of work, I like traveling, hiking with friends, gaming, and occasional cooking. I stay curious and keep iterating on both technical and design skills.',
+    'At Axel Springer, I have been involved in projects tools that streamline editorial workflows and support high-traffic and chaotic editors who demand instantaneous support which I would consider my most notable achievement.',
+    'I stay curious and keep iterating on both technical and design skills. Lately, diving into AI agent design and orchestration has been interesting with Google ADK, playing around with n8n workflows has also been fun.',
+    'Outside of work, I like traveling, hiking with friends, gaming, playing music and occasional cooking.',
   ],
 };
 
@@ -37,25 +38,23 @@ export const skillsByCategory = [
       'Zustand',
       'GSAP',
       'MUI',
-      'D3',
+      'D3.js',
     ],
   },
   {
-    category: 'Backend',
-    items: ['Node.js', 'Fastify', 'Python', 'Flask', 'MongoDB', 'SQL', 'AWS'],
+    category: 'Backend & Services',
+    items: ['Node.js', 'Fastify', 'Python', 'Flask', 'MongoDB', 'SQL', 'FFMPEG', 'Nexrender', 'Firebase', 'AWS'],
   },
   {
     category: 'Tools',
     items: [
       'Git',
-      'CI/CD',
+      'CI/CD (GH Workflow)',
       'Leaflet',
       'Google Analytics',
       'Figma',
-      'FFMPEG',
-      'Nexrender',
-      'Firebase',
       'Expo',
+      'Zod'
     ],
   },
 ];
@@ -74,11 +73,12 @@ export const workExperience = [
       "Heavily involved in BILD's digital transformation by building tailored tools that automate editorial workflows.",
       'Led the frontend for U.S. Elections and Bundestagswahl coverage serving over 20 million daily users with strong performance and cross-browser reliability.',
       'Built dynamic data visualizations with D3 and interactive animations with GSAP to improve engagement and reduce bounce rates.',
+      'Designed and engineered a full-stack Calendar application for unique internal usecases using RRULE engine for recurrence, PostgreSQL, Fastify on Node API design(TS), Zod for type validation to ensure stable performance.',
       'Developed a cross-platform news delivery app prototype with React Native, Firebase, and Expo in collaboration with web and mobile teams.',
       'Built server-side video encoding and rendering workflows using FFMPEG and Nexrender to automate media asset generation.',
       'Contributed to CI/CD pipelines and AI-assisted service boilerplates, reducing development time by about 30%.',
     ],
-    technologies: ['React', 'D3', 'GSAP', 'Leaflet', 'React Native', 'Firebase', 'Expo', 'FFMPEG', 'Nexrender'],
+    technologies: ['React', 'D3', 'GSAP', 'Leaflet', 'React Native', 'Firebase', 'Expo', 'FFMPEG', 'Nexrender', 'RRULE', 'Fastify', 'Zod', 'GH Workflows', 'AWS'],
     shippedProducts: [
       {
         label: 'U.S. Election Coverage',
@@ -102,14 +102,17 @@ export const workExperience = [
       },
     ],
     disclosureNote:
-      'Additional major internal tools and products in my portfolio are non-disclosable due to confidentiality constraints.',
+      'Additional major internal tools and products in my portfolio are non-disclosable due to confidentiality. I would be happy to discuss my further qualifications upon request.',
   },
   {
     id: 2,
     company: 'tetraeder.solar GmbH',
     location: 'Dortmund, Germany (Remote)',
     employmentType: 'Full-time',
-    roles: [{ title: 'Web Developer', start: 'May 2022', end: 'Dec 2023' }],
+    roles: [
+      { title: 'Web Developer', start: 'May 2022', end: 'April 2023' },
+      { title: 'Software Developer', start: 'May 2023', end: 'Dec 2023' },
+    ],
     bullets: [
       'Assisted in designing and developing frontend websites using HTML, CSS, JavaScript, and TypeScript.',
       'Developed server-side components with Python (Flask, SQLAlchemy) and PostgreSQL.',
