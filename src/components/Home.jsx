@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 import gsap from 'gsap';
 import Photo from '../assets/Me.jpeg';
 import { profile } from '../data/siteData';
+import ParticleNetwork from './ParticleNetwork';
 
 const Home = () => {
   const typewriterRef = useRef(null);
@@ -117,6 +118,10 @@ const Home = () => {
         <div className='mx-auto md:ml-auto w-52 h-52 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden border-4 border-red-500/30 shadow-[0_24px_90px_rgba(14,165,233,0.2)]'>
           <img src={Photo} alt='Rajdeep Bastakoti' className='w-full h-full object-cover' />
         </div>
+      </div>
+
+      <div className='max-w-[1200px] mx-auto'>
+        <ParticleNetwork />
       </div>
 
       <div className='hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center'>
