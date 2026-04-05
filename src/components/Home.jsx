@@ -81,15 +81,25 @@ const Home = () => {
       name='home'
       className='relative w-full min-h-screen bg-gradient-to-br from-[#091427] via-[#0a192f] to-[#122947] text-gray-200 px-6 sm:px-8 pt-36 pb-16'
     >
-      <div className='max-w-[1200px] mx-auto grid md:grid-cols-[1.2fr_0.8fr] items-center gap-10'>
-        <div className='space-y-6'>
-          <p className='text-red-400 tracking-wide text-sm uppercase'>Hello, my name is</p>
-          <h1 className='text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight'>{profile.name}</h1>
-          {/* <h2 className='text-xl sm:text-2xl text-slate-300 font-semibold'>{profile.title}</h2> */}
-          <p className='text-xl sm:text-2xl text-slate-300 font-semibold'>
-            I am a <span ref={typewriterRef} className='text-red-400'></span>
-            <span className='text-red-400 animate-pulse'>|</span>
-          </p>
+      <div className='max-w-[1200px] mx-auto space-y-6'>
+        {/* Top row: name block + image always side by side */}
+        <div className='relative md:grid md:grid-cols-[1.2fr_0.8fr] md:items-start md:gap-10'>
+          <div className='space-y-4'>
+            <p className='text-red-400 tracking-wide text-sm uppercase'>Hello, my name is</p>
+            <h1 className='text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight'>{profile.name}</h1>
+            <p className='text-xl sm:text-2xl text-slate-300 font-semibold'>
+              I am a <span ref={typewriterRef} className='text-red-400'></span>
+              <span className='text-red-400 animate-pulse'>|</span>
+            </p>
+          </div>
+
+          <div className='absolute top-0 right-0 md:static md:ml-auto w-28 h-28 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden border-4 border-red-500/30 shadow-[0_24px_90px_rgba(14,165,233,0.2)]'>
+            <img src={Photo} alt='Rajdeep Bastakoti' className='w-full h-full object-cover' />
+          </div>
+        </div>
+
+        {/* Bottom: description + buttons full width */}
+        <div className='space-y-6 md:max-w-[60%]'>
           <p className='text-base sm:text-lg leading-relaxed text-slate-300 max-w-[720px]'>{profile.summary}</p>
 
           <div className='flex flex-wrap items-center gap-4'>
@@ -114,10 +124,6 @@ const Home = () => {
             </Link>
           </div>
         </div>
-
-        <div className='mx-auto md:ml-auto w-52 h-52 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden border-4 border-red-500/30 shadow-[0_24px_90px_rgba(14,165,233,0.2)]'>
-          <img src={Photo} alt='Rajdeep Bastakoti' className='w-full h-full object-cover' />
-        </div>
       </div>
 
       <div className='max-w-[1200px] mx-auto'>
@@ -133,7 +139,7 @@ const Home = () => {
         </Link>
       </div>
 
-      <div className='md:hidden absolute bottom-48 right-5 -translate-y-1/2 flex flex-col items-center'>
+      <div className='md:hidden absolute bottom-[25dvh] right-5 flex flex-col items-center'>
         <Link to='about' smooth='easeOutCubic' duration={220} offset={-118} className='cursor-pointer flex flex-col items-center'>
           <svg width='50' height='60' viewBox='0 0 50 60' className='animate-finger-swipe'>
             <ellipse cx='25' cy='45' rx='8' ry='10' fill='#9ca3af' opacity='0.8' />
