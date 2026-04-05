@@ -22,7 +22,6 @@ My Personal portfolio website :)
   - [Installation](#installation)
   - [Running Locally](#running-locally)
 - [Project Structure](#project-structure)
-- [Available Scripts](#available-scripts)
 - [Deployment](#deployment)
 
 ## Features
@@ -66,15 +65,6 @@ src/
 ├── pages/               # Page-level section components
 └── App.js               # Application entry point
 ```
-
-## Available Scripts
-
-| Script | Description |
-|--------|-------------|
-| `npm start` | Start development server |
-| `npm run build` | Build for production |
-| `npm test` | Run tests in watch mode |
-| `npm run deploy` | Build and deploy to GitHub Pages |
 
 ## Deployment
 
