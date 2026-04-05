@@ -80,12 +80,6 @@ src/
 
 The site is deployed on a private domain `rajdeepbastakoti.com` via netlify.
 
-```bash
-npm run deploy
-```
-
-This runs `npm run build` first, then publishes the `build/` directory to master branch which is picked up by netlify.
-
 ---
 
 Copyright © 2026 Rajdeep Bastakoti. All rights reserved.
