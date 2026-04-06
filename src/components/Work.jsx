@@ -1,4 +1,3 @@
-import React from 'react';
 import { data } from "../data/data.js";
 
 const resolveProjectImage = (imageName) => {
@@ -79,7 +78,7 @@ const Work = () => {
                 <div className="absolute inset-0 bg-[#0a192f] translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col justify-center items-center gap-4 p-6">
                   <h3 className="text-2xl font-bold text-white text-center mb-2">{item.name}</h3>
                   <p className="text-gray-300 text-center text-sm leading-relaxed mb-4">{item.description}</p>
-                  <div className="flex gap-4 w-full max-w-xs">
+                  <div className="flex flex-wrap gap-3 w-full max-w-xs">
                     {item.github && (
                       <a
                         href={item.github}
@@ -94,10 +93,20 @@ const Work = () => {
                       href={item.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`${item.github ? 'flex-1' : 'w-full'} text-center py-3 px-4 bg-gray-700 hover:bg-gray-600 text-white font-semibold rounded transition-all duration-200 hover:scale-105`}
+                      className={`${item.github || item.livePred ? 'flex-1' : 'w-full'} text-center py-3 px-4 bg-gray-700 hover:bg-gray-600 text-white font-semibold rounded transition-all duration-200 hover:scale-105`}
                     >
                       Live
                     </a>
+                    {item.livePred && (
+                      <a
+                        href={item.livePred}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center py-3 px-4 bg-gray-700 hover:bg-gray-600 text-white font-semibold rounded transition-all duration-200 hover:scale-105"
+                      >
+                        Prediction
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
 /* ─── constants ──────────────────────────────────────────── */
 
@@ -178,9 +178,8 @@ const NetworkIcon = () => (
 
 /* ─── desktop strip ─────────────────────────────────────── */
 
-// fills from the canvas top down to ~48 px above the viewport bottom
-const desktopHeight = (wrapper) =>
-  Math.max(160, window.innerHeight - wrapper.getBoundingClientRect().top - 48);
+// fixed proportion of the viewport — not scroll-position dependent
+const desktopHeight = () => Math.max(160, Math.round(window.innerHeight * 0.42));
 
 const DesktopParticles = () => {
   const canvasRef  = useRef(null);

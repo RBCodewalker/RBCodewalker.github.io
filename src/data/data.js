@@ -27,6 +27,7 @@ export const data=[
         imageName:"btw-m.png",
         projectOrigin:"Axel Springer",
         live:"https://www.bild.de/ig/2161471a-046b-486a-a4e7-9aded82ff89a/index/index.html#/m/live",
+        livePred:"https://www.bild.de/ig/2161471a-046b-486a-a4e7-9aded82ff89a/index/index.html#/m/pred",
     },
     {
         id:4,
@@ -54,15 +55,6 @@ export const data=[
     },
     {
         id:7,
-        name:"Doctors Hub",
-        description:"Healthcare platform built with NextJS and TypeScript featuring REST API integration and infinite scrolling for seamless browsing of medical professionals.",
-        image:projectDH,
-        projectOrigin:"Personal",
-        github:"https://github.com/RBCodewalker/doctors-hub",
-        live:"https://doctors-hub.vercel.app/",
-    },
-    {
-        id:8,
         name:"Portfolio Website",
         description:"Personal portfolio showcasing projects and skills, built with React and styled using Tailwind CSS for a modern, responsive design.",
         image:projectPF,
@@ -70,4 +62,13 @@ export const data=[
         github:"https://github.com/RBCodewalker/portfolio",
         live:"https://rajdeepbastakoti.com/",
     }, 
+    // {
+    //     id:8,
+    //     name:"Doctors Hub",
+    //     description:"Healthcare platform built with NextJS and TypeScript featuring REST API integration and infinite scrolling for seamless browsing of medical professionals.",
+    //     image:projectDH,
+    //     projectOrigin:"Personal",
+    //     github:"https://github.com/RBCodewalker/doctors-hub",
+    //     live:"https://doctors-hub.vercel.app/",
+    // },
 ]
