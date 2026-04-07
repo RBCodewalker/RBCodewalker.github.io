@@ -1,4 +1,4 @@
-import projectDH from '../assets/projects/project_dh.png'
+// import projectDH from '../assets/projects/project_dh.png'
 import projectPF from '../assets/projects/project_portfolio.png'
 import projectEC from '../assets/projects/project_ec.png'
 
