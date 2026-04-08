@@ -92,10 +92,6 @@ const Home = () => {
               I am a <span ref={typewriterRef} className='text-red-400'></span>
               <span className='text-red-400 animate-pulse'>|</span>
             </p>
-            {/* Mobile-only absolute image */}
-            <div className='md:hidden absolute top-0 right-0 w-20 h-20 rounded-full overflow-hidden border-4 border-red-500/30 shadow-[0_24px_90px_rgba(14,165,233,0.2)]'>
-              <img src={Photo} alt='Rajdeep Bastakoti' className='w-full h-full object-cover' />
-            </div>
           </div>
 
           <p className='text-base sm:text-lg leading-relaxed text-slate-300 max-w-[720px]'>{profile.summary}</p>
